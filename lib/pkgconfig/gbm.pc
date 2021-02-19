@@ -1,0 +1,12 @@
+prefix=/home/u20/Public/work/mesalib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gbm
+Description: Mesa gbm library
+Requires.private: 
+Version: 19.0.0
+Libs: -L${libdir} -lgbm
+Libs.private: -ldl
+Cflags: -I${includedir}

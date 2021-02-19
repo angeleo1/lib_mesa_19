@@ -1,0 +1,11 @@
+prefix=/home/u20/Public/work/mesalib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+dridriverdir=${libdir}/dri
+
+Name: dri
+Description: Direct Rendering Infrastructure
+Version: 19.0.0
+Requires.private: libdrm >= 2.4.75
+Cflags: -I${includedir}
